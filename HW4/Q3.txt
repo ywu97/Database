@@ -1,0 +1,8 @@
+Q3 Linear equation:
+
+num_rings =
+
+- 11.933 * length
++ 25.766 * diameter
++ 20.358 * height
++ 2.836

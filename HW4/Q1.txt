@@ -1,0 +1,35 @@
+
+Linear Regression Model
+
+class(MEDV) =
+
+     -0.1084 * CRIM +
+      0.0458 * ZN +
+      2.7187 * CHAS=1 +
+    -17.376  * NOX +
+      3.8016 * RM +
+     -1.4927 * DIS +
+      0.2996 * RAD +
+     -0.0118 * TAX +
+     -0.9465 * PTRATIO +
+      0.0093 * B +
+     -0.5226 * LSTAT +
+     36.3411
+
+There are 12 terms in the equation.
+
+The positive coefficient means the attribute is in promotion to MEDV.
+The negative coefficient means the attribute is inversely proportional to MEDV.
+The greater the absolute value of the number, the greater the effect on the result。
+
+As we can see, in this case  NOX (nitric oxides concentration (parts per 10 million)) can be the most influential attribute.
+
+The INDUS and AGE attributes are dropped out in the equation.
+INDUS: proportion of non-retail business acres per town
+AGE: proportion of owner-occupied units built prior to 1940
+
+I think the following reasons can explain this situation: 
+	1. Including or excluding of INDUS and AGE attributes won't affect the aim predicting result(MEDV) a lots.(i.e the MEDV rarely depends on AGE and INDUS)
+	(i.e these attributes are independent from MEDV)
+	2. There might be some data overlaping in the input (not our case)
+	

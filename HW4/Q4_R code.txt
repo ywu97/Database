@@ -1,0 +1,42 @@
+########################################################################################################################
+# geosphere is a really cool library for spatial calcs, see
+# https://cran.r-project.org/web/packages/geosphere/vignettes/geosphere.pdf
+#install.packages('geosphere')
+# use the library to compute polygon stats such as area, perimeter, centroid
+library('geosphere')
+# the pairs of values are long,lat...
+pol <- rbind(c(-118.283099,34.021836), c(-118.282496,34.018681), c(-118.284278,34.018670), c(-118.286601,34.018712), c(-118.288979,34.019590), c(-118.287536,34.019994), c(-118.284182,34.021368))
+areaPolygon(pol)
+perimeter(pol)
+# store the centroid in 'c' because we'll need it below, for plotting
+c <- centroid(pol)
+c
+c[1][1]
+c[2][1]
+
+########################################################################################################################
+# leaflet is an R port of the excellent leaflet.js library (https://leafletjs.com/)
+# see https://cran.r-project.org/web/packages/leaflet/leaflet.pdf
+#install.packages("leaflet")
+# use leaflet to plot the convex hull coords, plus centroid
+library("leaflet")
+
+m <- leaflet()
+m <- addTiles(m)
+# our centroid - right now, it's the centroid of the 'pol' polygon above 
+m <- addMarkers(m, lng=c[1][1], lat=c[2][1], popup="Hull centroid")
+
+# our convex hull
+m<- addPolygons(m, lng = c(-118.283099,-118.282496,-118.284278,-118.286601,-118.288979,-118.287536,-118.284182,-118.283099), 
+                 lat = c(34.021836,34.018681,34.018670,34.018712,34.019590,34.019994,34.021368,34.021836))
+
+m <- addCircleMarkers(m, lng=-118.283099, lat=34.021836,label="Leavey Library", radius=2, fillOpacity=1.0,fill = TRUE, fillColor ="red")
+m <- addCircleMarkers(m, lng=-118.282496, lat=34.018681,label="Gaug Tibe Lib", radius=2, fillOpacity=1.0,fill = TRUE, fillColor ="red")
+m <- addCircleMarkers(m, lng=-118.284278, lat=34.018670,label="AVC Law Library", radius=2, fillOpacity=1.0,fill = TRUE, fillColor ="red")
+m <- addCircleMarkers(m, lng=-118.286601, lat=34.018712,label="Hoose Library", radius=2, fillOpacity=1.0,fill = TRUE, fillColor ="red")
+m <- addCircleMarkers(m, lng=-118.288979, lat=34.019590,label="SE Library", radius=2, fillOpacity=1.0,fill = TRUE, fillColor ="red")
+m <- addCircleMarkers(m, lng=-118.287536, lat=34.019994,label="Laufer Library", radius=2, fillOpacity=1.0,fill = TRUE, fillColor ="red")
+m <- addCircleMarkers(m, lng=-118.284182, lat=34.021368,label="VKC Library", radius=2, fillOpacity=1.0,fill = TRUE, fillColor ="red")
+# time to see the results
+m
+########################################################################################################################

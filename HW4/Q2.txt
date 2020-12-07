@@ -1,0 +1,14 @@
+Q2 Linear Equation: is the following:
+
+num_rings=
+
+-0.8249  * sex = I  +
+0.0577   * sex = M  +
+-0.4583  * length   +
+11.0751  * diameter +
+10.7615  * height   +
+8.9754   * whole_weight +
+-19.7869 * shucked_weight +
+-10.5818 * viscera_weight +
+8.7418   * shell_weight +
+3.8946
