@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Leavey Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283099,34.021836</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Ga_Ti Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282496,34.018681</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Law Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates> -118.284278,34.018670</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Hoose Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286601,34.018712</coordinates></Point>
+</Placemark>
+
+<Placemark><name>SE Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288979,34.019590</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Laufer Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.287536,34.019994</coordinates></Point>
+</Placemark>
+
+<Placemark><name>VKC Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284182,34.021368</coordinates></Point>
+</Placemark>
+
+
+
+
+
+<Placemark><name> EastAsian Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283715,34.020141</coordinates></Point>
+</Placemark>
+<Placemark><name>EL DJ Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283754,34.020031</coordinates></Point>
+</Placemark>
+<Placemark><name>Fe Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283495,34.020154</coordinates></Point>
+</Placemark>
+<Placemark><name> C Arts Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283560,34.020075</coordinates></Point>
+</Placemark>
+<Placemark><name>Uni Archives</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283766,34.020117</coordinates></Point>
+</Placemark>
+
+
+
+
+
+<Placemark><name>Tommy Trojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285460,34.020558</coordinates></Point>
+</Placemark>
+</Document></kml>

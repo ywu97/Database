@@ -1,0 +1,46 @@
+<!-- a very simple program to output a Spirograph(TM) curve and its (x,y) coords - Saty -->
+<html>
+   <body>
+      <canvas id="cnv" style="border:1px solid #777777;margin:2px;padding:2px;" width="300" height="300"></canvas>
+      <pre id="con" style="width:24%; border:1px solid #777777;margin:2px;padding:2px;"></pre>
+      
+      <script>
+         function prtt(msg) {
+             var trm = document.getElementById('con');
+             trm.innerHTML += msg + "\n";
+         }// prtt()
+        
+         
+         (function draw() {
+           var canvas = document.getElementById('cnv');
+           if (canvas.getContext){
+             var ctx = canvas.getContext('2d');
+         
+             ctx.beginPath();
+             
+             //x(t) = (R+r)*cos((r/R)*t) - a*cos((1+r/R)*t)
+             //y(t) = (R+r)*sin((r/R)*t) - a*sin((1+r/R)*t)
+             
+             var R=5, r=1, a=4;
+             var x0=R+r-a, y0=0;
+             ctx.moveTo(150+10*x0,150+10*y0);
+             
+             var cos=Math.cos, sin=Math.sin, pi=Math.PI, nRev=10;
+             for(var t=0.0;t<(pi*nRev);t+=0.05) {
+               var x=(R+r)*cos((r/R)*t) - a*cos((1+r/R)*t);
+               var y=(R+r)*sin((r/R)*t) - a*sin((1+r/R)*t);
+               var x2 = 150+10*x, y2 = 150+10*y;
+               ctx.lineTo(x2,y2);
+               
+               x2 = (-118.285426)+(x2-150)*0.00002;
+               y2 = (34.0205022) + (y2-150)*0.00002;
+                //document.write(x+", "+y);
+               prtt(x2 + "," + y2);
+             }
+            ctx.stroke();
+            
+           }
+         })(); // immediate execution JS 'magic' :)
+      </script>
+   </body>
+</html>

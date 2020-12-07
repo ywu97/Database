@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"> <Document>
+ <name>Paths</name>
+
+
+ <Style id="orangey">
+ <LineStyle>
+ <color>641478FF</color>
+ <width>2</width>
+ </LineStyle>
+</Style> 
+
+<Style id="pinky">
+ <LineStyle>
+ <color>647800B4</color>
+ <width>2</width>
+ </LineStyle>
+</Style> 
+
+<Style id="bluey">
+ <LineStyle>
+ <color>64781400</color>
+ <width>2</width>
+ </LineStyle>
+</Style> 
+
+<Style id="greeny">
+ <LineStyle>
+ <color>64147800</color>
+ <width>2</width>
+ </LineStyle>
+</Style> 
+
+
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+
+ <Placemark>
+ 	<name>T to Uni Archives</name>
+ 	<styleUrl>#orangey</styleUrl>
+	 <LineString>
+	 <coordinates> 
+	 -118.285460,34.020558,0
+	 -118.283766,34.020117,0
+	 </coordinates>
+	 </LineString> 
+</Placemark>
+
+<Placemark>
+	<name>T to VKC</name>
+	<styleUrl>#pinky</styleUrl>
+	 <LineString>
+	 <coordinates> 
+	 -118.285460,34.020558,0
+	 -118.284182,34.021368,0
+	 </coordinates>
+	 </LineString> 
+</Placemark>
+
+<Placemark>
+	<name>T to EL DJ Lib</name>
+	<styleUrl>#bluey</styleUrl>
+	 <LineString>
+	 <coordinates> 
+	 -118.285460,34.020558,0
+	 -118.283754,34.020031,0
+	 </coordinates>
+	 </LineString> 
+</Placemark>
+
+<Placemark>
+	<name>T to EastAsian Lib</name>
+	<styleUrl>#greeny</styleUrl>
+	 <LineString>
+	 <coordinates> 
+	 -118.285460,34.020558,0
+	 -118.283715,34.020141,0
+	 </coordinates>
+	 </LineString>
+ </Placemark>
+
+ <Placemark><name>Leavey Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283099,34.021836</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Gaug Tibe Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282496,34.018681</coordinates></Point>
+</Placemark>
+
+<Placemark><name>AVC Law Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates> -118.284278,34.018670</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Hoose Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286601,34.018712</coordinates></Point>
+</Placemark>
+
+<Placemark><name>SE Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288979,34.019590</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Laufer Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.287536,34.019994</coordinates></Point>
+</Placemark>
+
+<Placemark><name>VKC Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284182,34.021368</coordinates></Point>
+</Placemark>
+
+
+<Placemark><name>EastAsian Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283715,34.020141</coordinates></Point>
+</Placemark>
+
+<Placemark><name>EL DJ Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283754,34.020031</coordinates></Point>
+</Placemark>
+
+<Placemark><name>FeuchtwangerLib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283495,34.020154</coordinates></Point>
+</Placemark>
+
+<Placemark><name>CinematArts Lib</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283560,34.020075</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Uni Archives</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283766,34.020117</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Tommy Trojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285460,34.020558</coordinates></Point>
+</Placemark>
+
+ </Document> </kml>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"> <Placemark>
+<Style id="pinky">
+    <LineStyle>
+    <color>a00000ff</color>
+    <width>5</width>
+    </LineStyle>
+    <PolyStyle>
+        <color>7f0000ff</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+</Style> 
+ <name>The LibPolygon</name>
+ <Polygon>
+	 <extrude>1</extrude>
+	 <altitudeMode>clampToGround</altitudeMode>
+	 <styleUrl>#pinky</styleUrl>
+	 <outerBoundaryIs>
+		<LinearRing>
+			<coordinates>
+				 -118.283099,34.021836
+				 -118.282496,34.018681
+				 -118.284278,34.018670 
+				 -118.286601,34.018712 
+				 -118.288979,34.019590 
+				 -118.287536,34.019994
+				 -118.284182,34.021368
+				 -118.283099,34.021836
+			</coordinates>
+		 </LinearRing>
+ 	 </outerBoundaryIs>
+ </Polygon>
+ </Placemark> </kml> 
